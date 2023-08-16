@@ -1,0 +1,14 @@
+﻿using InnovexBackend.Models;
+using Microsoft.EntityFrameworkCore;
+
+namespace InnovexBackend
+{
+    // This is used to define our database tables and context
+    public class AppDbContext: DbContext
+    {
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
+
+        // Set our tables here
+        public DbSet<StaffModel> Staff { get; set; }
+    }
+}
