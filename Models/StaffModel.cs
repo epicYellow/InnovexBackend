@@ -11,19 +11,19 @@ namespace InnovexBackend.Models
         public int Id { get; set; }
 
         [Required]
-        public string username { get; set; } = string.Empty;
+        public string Username { get; set; } = string.Empty;
 
         [Required]
-        public string password { get; set; } = string.Empty;
+        public string Password { get; set; } = string.Empty;
 
         [Required]
-        public string fullname { get; set; } = string.Empty;
+        public string Fullname { get; set; } = string.Empty;
 
         [Required]
-        public string email { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
 
         [Required]
-        public string roleTitle { get; set; } = string.Empty;
+        public string RoleTitle { get; set; } = "User";
 
         [Required]
         public bool IsActive { get; set; } = true;
