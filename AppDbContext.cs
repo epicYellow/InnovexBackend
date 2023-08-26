@@ -10,5 +10,6 @@ namespace InnovexBackend
 
         // Set our tables here
         public DbSet<StaffModel> Staff { get; set; }
+        public DbSet<TransactionsModel> Transactions { get; set; }
     }
 }

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\viand\\OneDrive\\Desktop\\DV 300 - Interactive Development Term 3\\InnovexBackend\\InnovexBackend.csproj": {}
+    "D:\\3rd Year\\term 3\\InnovexBackend\\InnovexBackend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\viand\\OneDrive\\Desktop\\DV 300 - Interactive Development Term 3\\InnovexBackend\\InnovexBackend.csproj": {
+    "D:\\3rd Year\\term 3\\InnovexBackend\\InnovexBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\viand\\OneDrive\\Desktop\\DV 300 - Interactive Development Term 3\\InnovexBackend\\InnovexBackend.csproj",
+        "projectUniqueName": "D:\\3rd Year\\term 3\\InnovexBackend\\InnovexBackend.csproj",
         "projectName": "InnovexBackend",
-        "projectPath": "C:\\Users\\viand\\OneDrive\\Desktop\\DV 300 - Interactive Development Term 3\\InnovexBackend\\InnovexBackend.csproj",
-        "packagesPath": "C:\\Users\\viand\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\viand\\OneDrive\\Desktop\\DV 300 - Interactive Development Term 3\\InnovexBackend\\obj\\",
+        "projectPath": "D:\\3rd Year\\term 3\\InnovexBackend\\InnovexBackend.csproj",
+        "packagesPath": "C:\\Users\\Justin\\.nuget\\packages\\",
+        "outputPath": "D:\\3rd Year\\term 3\\InnovexBackend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\3rd Year\\Maui\\MAUI SDK\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\viand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Justin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,8 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "C:\\Program Files (x86)\\dotnet\\library-packs": {},
+          "C:\\Program Files (x86)\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -96,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

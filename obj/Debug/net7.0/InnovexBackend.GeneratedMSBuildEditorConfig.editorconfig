@@ -9,9 +9,33 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = InnovexBackend
 build_property.RootNamespace = InnovexBackend
-build_property.ProjectDir = C:\Users\viand\OneDrive\Desktop\DV 300 - Interactive Development Term 3\InnovexBackend\
+build_property.ProjectDir = D:\3rd Year\term 3\InnovexBackend\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\viand\OneDrive\Desktop\DV 300 - Interactive Development Term 3\InnovexBackend
+build_property.MSBuildProjectDirectory = D:\3rd Year\term 3\InnovexBackend
 build_property._RazorSourceGeneratorDebug = 
+
+[D:/3rd Year/term 3/InnovexBackend/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/3rd Year/term 3/InnovexBackend/Views/TransactionsModels/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25zTW9kZWxzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/3rd Year/term 3/InnovexBackend/Views/TransactionsModels/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25zTW9kZWxzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/3rd Year/term 3/InnovexBackend/Views/TransactionsModels/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25zTW9kZWxzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/3rd Year/term 3/InnovexBackend/Views/TransactionsModels/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25zTW9kZWxzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/3rd Year/term 3/InnovexBackend/Views/TransactionsModels/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25zTW9kZWxzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
