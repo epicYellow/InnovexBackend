@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ByOR/R0iBIViZbmT3HpbbslkqBJdeBHaFEuO4VekHERZiUA7bNG6WcwPl1QHJ1OBExqComXUrjqWtwCxjTwpuA==",
+  "dgSpecHash": "kDeP2tp62J+P1MepWd+3eNa/PLjLdtkUhqQAqbOJk5n5Z2Bfwl/OL6GRZyg5GU5qycef2q1CXShwnXVW+x7XSw==",
   "success": true,
   "projectFilePath": "C:\\Users\\viand\\OneDrive\\Desktop\\DV 300 - Interactive Development Term 3\\InnovexBackend\\InnovexBackend.csproj",
   "expectedPackageFiles": [
@@ -60,7 +60,7 @@
     "C:\\Users\\viand\\.nuget\\packages\\k4os.compression.lz4\\1.3.5\\k4os.compression.lz4.1.3.5.nupkg.sha512",
     "C:\\Users\\viand\\.nuget\\packages\\k4os.compression.lz4.streams\\1.3.5\\k4os.compression.lz4.streams.1.3.5.nupkg.sha512",
     "C:\\Users\\viand\\.nuget\\packages\\k4os.hash.xxhash\\1.0.8\\k4os.hash.xxhash.1.0.8.nupkg.sha512",
-    "C:\\Users\\viand\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.9\\microsoft.aspnetcore.openapi.7.0.9.nupkg.sha512",
+    "C:\\Users\\viand\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.10\\microsoft.aspnetcore.openapi.7.0.10.nupkg.sha512",
     "C:\\Users\\viand\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.11\\microsoft.aspnetcore.razor.language.6.0.11.nupkg.sha512",
     "C:\\Users\\viand\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\viand\\.nuget\\packages\\microsoft.build\\17.3.2\\microsoft.build.17.3.2.nupkg.sha512",

@@ -1,5 +1,6 @@
 using InnovexBackend;
 using Microsoft.EntityFrameworkCore;
+using InnovexBackend.Controllers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,5 +30,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.MapStaffModelEndpoints();
 
 app.Run();
