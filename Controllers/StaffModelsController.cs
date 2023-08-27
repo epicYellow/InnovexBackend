@@ -12,8 +12,7 @@ using Isopoh.Cryptography.Argon2;
 namespace InnovexBackend.Controllers
 {
     [Route("api/[controller]")]
-    [ApiController]
-    public class StaffModelsController : ControllerBase
+    [ApiController]    public class StaffModelsController : ControllerBase
     {
         private readonly AppDbContext _context;
 

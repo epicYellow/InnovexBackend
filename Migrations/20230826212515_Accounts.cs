@@ -6,30 +6,26 @@ using MySql.EntityFrameworkCore.Metadata;
 namespace InnovexBackend.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class Accounts : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AlterDatabase()
-                .Annotation("MySQL:Charset", "utf8mb4");
-
             migrationBuilder.CreateTable(
-                name: "Staff",
+                name: "Accounts",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    username = table.Column<string>(type: "longtext", nullable: false),
-                    password = table.Column<string>(type: "longtext", nullable: false),
-                    fullname = table.Column<string>(type: "longtext", nullable: false),
-                    email = table.Column<string>(type: "longtext", nullable: false),
-                    roleTitle = table.Column<string>(type: "longtext", nullable: false),
-                    IsActive = table.Column<bool>(type: "tinyint(1)", nullable: false)
+                    Account_number = table.Column<string>(type: "longtext", nullable: false),
+                    Type_id = table.Column<int>(type: "int", nullable: false),
+                    Transaction_fee = table.Column<float>(type: "float", nullable: false),
+                    Balance = table.Column<float>(type: "float", nullable: false),
+                    Client_id = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Staff", x => x.Id);
+                    table.PrimaryKey("PK_Accounts", x => x.Id);
                 })
                 .Annotation("MySQL:Charset", "utf8mb4");
         }
@@ -38,7 +34,7 @@ namespace InnovexBackend.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Staff");
+                name: "Accounts");
         }
     }
 }

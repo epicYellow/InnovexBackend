@@ -1,0 +1,53 @@
+﻿@model IEnumerable<InnovexBackend.Models.AccountTypes>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Type_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Transaction_fee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Annual_interest_rate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Free_limit)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Type_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Transaction_fee)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Annual_interest_rate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Free_limit)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
