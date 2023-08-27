@@ -31,6 +31,6 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.MapStaffModelEndpoints();
+//app.MapStaffModelEndpoints();
 
 app.Run();
