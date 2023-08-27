@@ -1,3 +1,5 @@
 
 *.vsidx
 *.editorconfig
+*.v2
+.vs/InnovexBackend/v17/.suo
