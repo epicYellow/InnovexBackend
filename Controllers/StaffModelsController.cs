@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using InnovexBackend;
 using InnovexBackend.Models;
+using Isopoh.Cryptography.Argon2;
 
 namespace InnovexBackend.Controllers
 {
@@ -86,10 +87,13 @@ namespace InnovexBackend.Controllers
         [HttpPost]
         public async Task<ActionResult<StaffModel>> PostStaffModel(StaffModel staffModel)
         {
-          if (_context.Staff == null)
-          {
-              return Problem("Entity set 'AppDbContext.Staff'  is null.");
-          }
+            if (_context.Staff == null)
+            {
+                return Problem("Entity set 'AppDbContext.Staff'  is null.");
+            }
+
+            // Hashes the user password
+            staffModel.Password = Argon2.Hash(staffModel.Password);
             _context.Staff.Add(staffModel);
             await _context.SaveChangesAsync();
 
