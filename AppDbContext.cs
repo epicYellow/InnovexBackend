@@ -16,5 +16,7 @@ namespace InnovexBackend
         public DbSet<Client> Clients { get; set; }
 
         public DbSet<AccountTypes> AccountTypes { get; set; }
+
+        public DbSet<InnovexBackend.Models.Transactions> Transactions { get; set; } = default!;
     }
 }
