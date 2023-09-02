@@ -23,24 +23,24 @@ namespace InnovexBackend.Controllers
 
         // GET: api/Clients
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Client>>> GetClient()
+        public async Task<ActionResult<IEnumerable<Client>>> GetClients()
         {
-          if (_context.Client == null)
+          if (_context.Clients == null)
           {
               return NotFound();
           }
-            return await _context.Client.ToListAsync();
+            return await _context.Clients.ToListAsync();
         }
 
         // GET: api/Clients/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Client>> GetClient(int id)
         {
-          if (_context.Client == null)
+          if (_context.Clients == null)
           {
               return NotFound();
           }
-            var client = await _context.Client.FindAsync(id);
+            var client = await _context.Clients.FindAsync(id);
 
             if (client == null)
             {
@@ -86,11 +86,11 @@ namespace InnovexBackend.Controllers
         [HttpPost]
         public async Task<ActionResult<Client>> PostClient(Client client)
         {
-          if (_context.Client == null)
+          if (_context.Clients == null)
           {
-              return Problem("Entity set 'AppDbContext.Client'  is null.");
+              return Problem("Entity set 'AppDbContext.Clients'  is null.");
           }
-            _context.Client.Add(client);
+            _context.Clients.Add(client);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetClient", new { id = client.Id }, client);
@@ -100,17 +100,17 @@ namespace InnovexBackend.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteClient(int id)
         {
-            if (_context.Client == null)
+            if (_context.Clients == null)
             {
                 return NotFound();
             }
-            var client = await _context.Client.FindAsync(id);
+            var client = await _context.Clients.FindAsync(id);
             if (client == null)
             {
                 return NotFound();
             }
 
-            _context.Client.Remove(client);
+            _context.Clients.Remove(client);
             await _context.SaveChangesAsync();
 
             return NoContent();
@@ -118,7 +118,7 @@ namespace InnovexBackend.Controllers
 
         private bool ClientExists(int id)
         {
-            return (_context.Client?.Any(e => e.Id == id)).GetValueOrDefault();
+            return (_context.Clients?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }
