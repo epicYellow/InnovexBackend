@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using InnovexBackend;
 using InnovexBackend.Models;
+using System.Diagnostics;
 
 namespace InnovexBackend.Controllers
 {
@@ -15,6 +16,49 @@ namespace InnovexBackend.Controllers
     public class AccountsController : ControllerBase
     {
         private readonly AppDbContext _context;
+        private readonly Random _random = new Random();
+
+        //public int GenerateUniqueAccountNumber(int id)
+        //{
+        //    int maxAttempts = 100;
+        //    int attempts = 0;
+        //    int randomAccountNumber;
+
+        //    // Get all existing account numbers from your data source (replace this with your actual data retrieval method)
+        //    List<int> existingAccountNumbers = GetAllAccountNumbersFromDatabase(id);
+
+        //    do
+        //    {
+        //        // Generate a random 6-digit number
+        //        randomAccountNumber = _random.Next(10000000, 100000000);
+
+        //        // Check if the generated number is unique
+        //        if (!existingAccountNumbers.Contains(randomAccountNumber))
+        //        {
+        //            // It's unique; you can use it
+        //            return randomAccountNumber;
+        //        }
+
+        //        attempts++;
+
+        //        // Add a maximum attempts limit to prevent infinite looping
+        //        if (attempts >= maxAttempts)
+        //        {
+        //            throw new Exception("Unable to generate a unique account number after 100 attempts.");
+        //        }
+        //    } while (true);
+        //}
+
+        //private async Task<List<Accounts>> GetAllAccountNumbersFromDatabase(int id)
+        //{
+        //    // Simulate fetching existing account numbers from your database
+        //    // You should implement this to retrieve data from your data source
+        //    ActionResult<IEnumerable<Accounts>> accountsResult = await GetAccounts();
+        //    Debug.WriteLine(accountsResult);
+        //    return new Accounts;
+        //    //List<Accounts> existingAccountNumbers = accountsResult;
+        //    //return existingAccountNumbers;
+        //}
 
         public AccountsController(AppDbContext context)
         {

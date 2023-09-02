@@ -19,5 +19,7 @@ namespace InnovexBackend.Models
         public float Balance { get; set; } = float.MaxValue;
         [Required]
         public int Client_id { get; set; } = 0;
+        [Required]
+        public string Client_name { get; set; } = string.Empty;
     }
 }
