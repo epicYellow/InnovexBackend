@@ -101,6 +101,7 @@ namespace InnovexBackend.Controllers
         {
             if (id != accounts.Id)
             {
+                Debug.WriteLine("Nope");
                 return BadRequest();
             }
 
