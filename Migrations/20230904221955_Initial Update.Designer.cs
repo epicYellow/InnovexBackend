@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace InnovexBackend.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230902103505_Client Name Table")]
-    partial class ClientNameTable
+    [Migration("20230904221955_Initial Update")]
+    partial class InitialUpdate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -125,7 +125,7 @@ namespace InnovexBackend.Migrations
                     b.ToTable("Clients");
                 });
 
-            modelBuilder.Entity("InnovexBackend.Models.StaffModel", b =>
+            modelBuilder.Entity("InnovexBackend.Models.Staff", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -135,12 +135,16 @@ namespace InnovexBackend.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<string>("Fullname")
+                    b.Property<string>("IdNumber")
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("tinyint(1)");
+                    b.Property<float>("Income")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.Property<string>("Password")
                         .IsRequired()
@@ -150,7 +154,7 @@ namespace InnovexBackend.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<string>("Username")
+                    b.Property<string>("Surname")
                         .IsRequired()
                         .HasColumnType("longtext");
 

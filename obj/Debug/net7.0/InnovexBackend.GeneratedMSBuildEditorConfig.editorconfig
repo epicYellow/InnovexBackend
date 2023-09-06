@@ -9,33 +9,64 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = InnovexBackend
 build_property.RootNamespace = InnovexBackend
-build_property.ProjectDir = D:\DevOps\InnovexBackend\
+<<<<<<< HEAD
+build_property.ProjectDir = C:\Users\viand\OneDrive\Desktop\DV 300 - Interactive Development Term 3\InnovexBackend\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\DevOps\InnovexBackend
+build_property.MSBuildProjectDirectory = C:\Users\viand\OneDrive\Desktop\DV 300 - Interactive Development Term 3\InnovexBackend
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/DevOps/InnovexBackend/Views/AccountTypes/Create.cshtml]
+[C:/Users/viand/OneDrive/Desktop/DV 300 - Interactive Development Term 3/InnovexBackend/Views/AccountTypes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFR5cGVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DevOps/InnovexBackend/Views/AccountTypes/Delete.cshtml]
+[C:/Users/viand/OneDrive/Desktop/DV 300 - Interactive Development Term 3/InnovexBackend/Views/AccountTypes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFR5cGVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DevOps/InnovexBackend/Views/AccountTypes/Details.cshtml]
+[C:/Users/viand/OneDrive/Desktop/DV 300 - Interactive Development Term 3/InnovexBackend/Views/AccountTypes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFR5cGVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DevOps/InnovexBackend/Views/AccountTypes/Edit.cshtml]
+[C:/Users/viand/OneDrive/Desktop/DV 300 - Interactive Development Term 3/InnovexBackend/Views/AccountTypes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFR5cGVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DevOps/InnovexBackend/Views/AccountTypes/Index.cshtml]
+[C:/Users/viand/OneDrive/Desktop/DV 300 - Interactive Development Term 3/InnovexBackend/Views/AccountTypes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFR5cGVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DevOps/InnovexBackend/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/viand/OneDrive/Desktop/DV 300 - Interactive Development Term 3/InnovexBackend/Views/Shared/_ValidationScriptsPartial.cshtml]
+=======
+build_property.ProjectDir = D:\3rd Year\term 3\InnovexBackend\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\3rd Year\term 3\InnovexBackend
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/3rd Year/term 3/InnovexBackend/Views/AccountTypes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFR5cGVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/3rd Year/term 3/InnovexBackend/Views/AccountTypes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFR5cGVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/3rd Year/term 3/InnovexBackend/Views/AccountTypes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFR5cGVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/3rd Year/term 3/InnovexBackend/Views/AccountTypes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFR5cGVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/3rd Year/term 3/InnovexBackend/Views/AccountTypes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFR5cGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/3rd Year/term 3/InnovexBackend/Views/Shared/_ValidationScriptsPartial.cshtml]
+>>>>>>> origin/JustinbackendTakkie
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

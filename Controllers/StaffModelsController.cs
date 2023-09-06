@@ -23,7 +23,7 @@ namespace InnovexBackend.Controllers
 
         // GET: api/StaffModels
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<StaffModel>>> GetStaff()
+        public async Task<ActionResult<IEnumerable<Staff>>> GetStaff()
         {
           if (_context.Staff == null)
           {
@@ -34,7 +34,7 @@ namespace InnovexBackend.Controllers
 
         // GET: api/StaffModels/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<StaffModel>> GetStaffModel(int id)
+        public async Task<ActionResult<Staff>> GetStaffModel(int id)
         {
           if (_context.Staff == null)
           {
@@ -53,7 +53,7 @@ namespace InnovexBackend.Controllers
         // PUT: api/StaffModels/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutStaffModel(int id, StaffModel staffModel)
+        public async Task<IActionResult> PutStaffModel(int id, Staff staffModel)
         {
             if (id != staffModel.Id)
             {
@@ -84,7 +84,7 @@ namespace InnovexBackend.Controllers
         // POST: api/StaffModels
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<StaffModel>> PostStaffModel(StaffModel staffModel)
+        public async Task<ActionResult<Staff>> PostStaffModel(Staff staffModel)
         {
             if (_context.Staff == null)
             {
