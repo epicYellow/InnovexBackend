@@ -21,5 +21,6 @@ namespace InnovexBackend.Models
         public int Client_id { get; set; } = 0;
         [Required]
         public string Client_name { get; set; } = string.Empty;
+        public int Free_transactions_left { get; set; }
     }
 }
