@@ -540,3 +540,5 @@ D:\DevOps\InnovexBackend\obj\Debug\net7.0\scopedcss\bundle\InnovexBackend.styles
 D:\DevOps\InnovexBackend\obj\Debug\net7.0\InnovexBackend.csproj.CopyComplete
 D:\DevOps\InnovexBackend\obj\Debug\net7.0\InnovexBackend.genruntimeconfig.cache
 D:\DevOps\InnovexBackend\obj\Debug\net7.0\ref\InnovexBackend.dll
+C:\Users\viand\OneDrive\Desktop\DV 300 - Interactive Development Term 3\InnovexBackend\obj\Debug\net7.0\InnovexBackend.RazorAssemblyInfo.cache
+C:\Users\viand\OneDrive\Desktop\DV 300 - Interactive Development Term 3\InnovexBackend\obj\Debug\net7.0\InnovexBackend.RazorAssemblyInfo.cs

@@ -9,7 +9,7 @@ namespace InnovexBackend
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
         // Set our tables here
-        public DbSet<StaffModel> Staff { get; set; }
+        public DbSet<Staff> Staff { get; set; }
 
         public DbSet<Accounts> Accounts { get; set; }
 
@@ -17,6 +17,6 @@ namespace InnovexBackend
 
         public DbSet<AccountTypes> AccountTypes { get; set; }
 
-        public DbSet<InnovexBackend.Models.Transactions> Transactions { get; set; } = default!;
+        public DbSet<Transactions> Transactions { get; set; } = default!;
     }
 }

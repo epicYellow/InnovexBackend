@@ -122,7 +122,7 @@ namespace InnovexBackend.Migrations
                     b.ToTable("Clients");
                 });
 
-            modelBuilder.Entity("InnovexBackend.Models.StaffModel", b =>
+            modelBuilder.Entity("InnovexBackend.Models.Staff", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -132,12 +132,16 @@ namespace InnovexBackend.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<string>("Fullname")
+                    b.Property<string>("IdNumber")
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("tinyint(1)");
+                    b.Property<float>("Income")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.Property<string>("Password")
                         .IsRequired()
@@ -147,7 +151,7 @@ namespace InnovexBackend.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<string>("Username")
+                    b.Property<string>("Surname")
                         .IsRequired()
                         .HasColumnType("longtext");
 

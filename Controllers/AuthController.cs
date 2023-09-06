@@ -2,6 +2,7 @@
 using Isopoh.Cryptography.Argon2;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 
 namespace InnovexBackend.Controllers
 {
@@ -18,35 +19,41 @@ namespace InnovexBackend.Controllers
 
         // Post request to check if user is authenticated
         [HttpPost("login")]
-        public IActionResult Login(StaffModel staff)
+        public IActionResult Login(Staff staff)
         {
             var IsAuthenticated = ValidateUserCredentials(staff.Email, staff.Password);
 
-            if (IsAuthenticated)
+            if (IsAuthenticated.IsAuthenticated)
             {
-                // Generate a Valid Token
-                return Ok(new { Token = "Good Job" });
-            } 
-            
+                var UserId = IsAuthenticated.UserId.ToString();
+                // Return the UserId along with the Token
+                return Ok(new { Token = "Good Job",UserId });
+            }
+
             return Unauthorized();
-            
         }
 
-        private bool ValidateUserCredentials(string email, string password)
+        private (bool IsAuthenticated, int UserId) ValidateUserCredentials(string email, string password)
         {
             // TODO: Check Validation
             // First: Check if the user is valid
-            var staff = _context.Staff.FirstOrDefault(s =>s.Email == email);
+            var staff = _context.Staff.FirstOrDefault(s => s.Email == email);
+            Debug.WriteLine(staff.Email);
 
-            if (staff != null) {
+            if (staff != null)
+            {
                 // Verify if password is correct
                 if (Argon2.Verify(staff.Password, password))
                 {
-                    return true;
+                    Debug.WriteLine("This is a user");
+                    // Authentication is successful, return the user ID
+                    return (true, staff.Id);
                 }
             }
 
-            return false;
+            // Authentication failed, return -1 as the user ID
+            return (false, -1);
         }
+
     }
 }
