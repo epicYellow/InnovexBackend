@@ -2231,6 +2231,22 @@
           }
         }
       },
+      "Npgsql/7.0.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "lib/net7.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "NuGet.Common/6.6.1": {
         "type": "package",
         "dependencies": {
@@ -7709,6 +7725,31 @@
         "packageIcon.png"
       ]
     },
+    "Npgsql/7.0.6": {
+      "sha512": "TAqvwRnm3NJ0QvN7cvu6geJkbI0XPzGVRElVY5hF4gsgA+BnE12x6GM1TLhdeq+7ZKvvo3BD8jXKnXmr3tvdEw==",
+      "type": "package",
+      "path": "npgsql/7.0.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net5.0/Npgsql.dll",
+        "lib/net5.0/Npgsql.xml",
+        "lib/net6.0/Npgsql.dll",
+        "lib/net6.0/Npgsql.xml",
+        "lib/net7.0/Npgsql.dll",
+        "lib/net7.0/Npgsql.xml",
+        "lib/netcoreapp3.1/Npgsql.dll",
+        "lib/netcoreapp3.1/Npgsql.xml",
+        "lib/netstandard2.0/Npgsql.dll",
+        "lib/netstandard2.0/Npgsql.xml",
+        "lib/netstandard2.1/Npgsql.dll",
+        "lib/netstandard2.1/Npgsql.xml",
+        "npgsql.7.0.6.nupkg.sha512",
+        "npgsql.nuspec",
+        "postgresql.png"
+      ]
+    },
     "NuGet.Common/6.6.1": {
       "sha512": "hW5NtShErO3qbdkyv7doCRsFNK9Rlcc7mVjYM+hg1sOAWheTh/oo95DzNbsZthiqyHZfaioopfWtzmoxNw9h4g==",
       "type": "package",
@@ -12206,59 +12247,30 @@
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.10",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.9",
       "MySql.EntityFrameworkCore >= 7.0.5",
+      "Npgsql >= 7.0.6",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "C:\\Users\\viand\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
-=======
-    "C:\\Users\\Justin\\.nuget\\packages\\": {},
-    "D:\\3rd Year\\Maui\\MAUI SDK\\NuGetPackages": {}
->>>>>>> origin/JustinbackendTakkie
+    "/Users/gert/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\viand\\OneDrive\\Desktop\\DV 300 - Interactive Development Term 3\\InnovexBackend\\InnovexBackend.csproj",
-      "projectName": "InnovexBackend",
-      "projectPath": "C:\\Users\\viand\\OneDrive\\Desktop\\DV 300 - Interactive Development Term 3\\InnovexBackend\\InnovexBackend.csproj",
-      "packagesPath": "C:\\Users\\viand\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\viand\\OneDrive\\Desktop\\DV 300 - Interactive Development Term 3\\InnovexBackend\\obj\\",
-=======
-      "projectUniqueName": "D:\\3rd Year\\term 3\\InnovexBackend\\InnovexBackend.csproj",
-      "projectName": "InnovexBackend",
-      "projectPath": "D:\\3rd Year\\term 3\\InnovexBackend\\InnovexBackend.csproj",
-      "packagesPath": "C:\\Users\\Justin\\.nuget\\packages\\",
-      "outputPath": "D:\\3rd Year\\term 3\\InnovexBackend\\obj\\",
->>>>>>> origin/JustinbackendTakkie
+      "projectUniqueName": "/Users/gert/Documents/GitHub/InnovexBackend/InnovexProject.csproj",
+      "projectName": "InnovexProject",
+      "projectPath": "/Users/gert/Documents/GitHub/InnovexBackend/InnovexProject.csproj",
+      "packagesPath": "/Users/gert/.nuget/packages/",
+      "outputPath": "/Users/gert/Documents/GitHub/InnovexBackend/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "D:\\3rd Year\\Maui\\MAUI SDK\\NuGetPackages"
-      ],
       "configFilePaths": [
-<<<<<<< HEAD
-        "C:\\Users\\viand\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-        "C:\\Users\\Justin\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> origin/JustinbackendTakkie
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/gert/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-<<<<<<< HEAD
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
-=======
-        "C:\\Program Files (x86)\\dotnet\\library-packs": {},
-        "C:\\Program Files (x86)\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
->>>>>>> origin/JustinbackendTakkie
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -12307,6 +12319,10 @@
             "target": "Package",
             "version": "[7.0.5, )"
           },
+          "Npgsql": {
+            "target": "Package",
+            "version": "[7.0.6, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.5.0, )"
@@ -12331,11 +12347,7 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
->>>>>>> origin/JustinbackendTakkie
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.404/RuntimeIdentifierGraph.json"
       }
     }
   }

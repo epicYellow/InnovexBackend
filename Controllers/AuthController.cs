@@ -1,8 +1,15 @@
-﻿using InnovexBackend.Models;
-using Isopoh.Cryptography.Argon2;
+﻿using Isopoh.Cryptography.Argon2;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using InnovexBackend;
+using InnovexBackend.Models;
 using System.Diagnostics;
+
 
 namespace InnovexBackend.Controllers
 {
@@ -53,6 +60,52 @@ namespace InnovexBackend.Controllers
 
             // Authentication failed, return -1 as the user ID
             return (false, -1);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetUserDetails()
+        {
+            if (_context.Staff == null)
+            {
+                return NotFound();
+            }
+
+            var members = await _context.Staff.ToListAsync();
+
+            if (members == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(members);
+        }
+
+        [HttpPut("Password")]
+        public async Task<IActionResult> UpdateUserPassword([FromBody] Staff request)
+        {
+            if (string.IsNullOrEmpty(request.Email) || string.IsNullOrEmpty(request.Password))
+            {
+                return BadRequest("Invalid request parameters.");
+            }
+
+            var existingUser = await _context.Staff
+                .SingleOrDefaultAsync(p => p.Email.ToLower().Equals(request.Email.ToLower()));
+
+            if (existingUser == null)
+            {
+                return NotFound("Employee not found.");
+            }
+
+            existingUser.Password = Argon2.Hash(request.Password);
+
+            int rowsAffected = await _context.SaveChangesAsync();
+
+            if (rowsAffected < 1)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Failed to update the password.");
+            }
+
+            return Ok(true);
         }
 
     }

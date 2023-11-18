@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{95DA1D1D-4BBC-454F-BC8B-F2E684347C72}|https">
+  <MonoDevelop.Ide.ItemProperties.InnovexProject PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/AuthController.cs">
+    <Files>
+      <File FileName="Models/Staff.cs" />
+      <File FileName="Controllers/ClientsController.cs" />
+      <File FileName="Controllers/AccountsController.cs" Line="22" Column="12" />
+      <File FileName="Controllers/AuthController.cs" Line="55" Column="19" NotebookId="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="InnovexProject">
+            <Node name="InnovexProject">
+              <Node name="Controllers" expanded="True">
+                <Node name="AuthController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
